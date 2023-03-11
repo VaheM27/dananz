@@ -1,4 +1,4 @@
-# Minimalist Furniture Website - Angular Project
+# Minimalist Furniture Website - Cypress Angular Project
 
 This is an Angular project for a simple minimalist furniture website. It includes CSS and Angular modules to create a clean and modern interface. Additionally, it uses ESLint, Prettier, and TypeScript to improve code quality and maintainability.
 
