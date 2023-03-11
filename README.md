@@ -1,27 +1,37 @@
-# Dananz
+# Minimalist Furniture Website - Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+This is an Angular project for a simple minimalist furniture website. It includes CSS and Angular modules to create a clean and modern interface. Additionally, it uses ESLint, Prettier, and TypeScript to improve code quality and maintainability.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To get started with this project, follow these steps:
 
-## Code scaffolding
+1. Clone the repository to your local machine.
+2. Install dependencies by running `npm install` in the project directory.
+3. Start the development server by running `npm run dev`.
+4. Open your browser and navigate to http://localhost:4200.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Dependencies
 
-## Build
+This project requires the following dependencies:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular (version 12.0.0 or higher)
+- Angular CLI (version 12.0.0 or higher)
+- Node.js (version 14.0.0 or higher)
+- npm (version 6.0.0 or higher)
+- ESLint (version 7.0.0 or higher)
+- Prettier (version 2.0.0 or higher)
+- TypeScript (version 4 or higher)
 
-## Running unit tests
+# Project Structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project is organized into the following directories:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `src/app`: Contains the main Angular application code, including the `app.component.ts` file where you can export components located in the `src/app/components` directory.
+- `src/app/components`: Contains components used in the application, such as header, footer, and product cards.
+- `src/assets`: Contains static assets such as images and fonts.
+- `src/styles`: Contains the main CSS code.
+- `angular.json`: Contains configuration settings for the Angular CLI.
+- `.eslintrc.json`: Contains ESLint configuration settings.
+- `.prettierrc.json`: Contains Prettier configuration settings.
+- `tsconfig.json`: Contains TypeScript configuration settings
