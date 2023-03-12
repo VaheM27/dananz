@@ -1,28 +1,50 @@
-<div>
+<div class="container">
   <div>
-    <nav>
-      <a href="/">
-        <img src="../../assets/images/dananzLogo.png" alt="home-logo" />
-      </a>
-      <div>
-        <ul>
-          <li>
-            <a href="/"> Home </a>
-          </li>
-          <li>
-            <a href="/"> About Us </a>
-          </li>
-          <li>
-            <a href="/"> Services </a>
-          </li>
-          <li>
-            <a href="/"> Our Teams </a>
-          </li>
-          <li>
-            <a href="/"> Contact Us </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <a href="/">
+      <img src="../../assets/images/dananzLogo.png" alt="home-logo" />
+    </a>
   </div>
+  <div>
+    <ul class="nav-lists" id="navResize">
+      <li>
+        <a href="/" class="buttons"> Home </a>
+      </li>
+      <li>
+        <a href="/" class="buttons"> About Us </a>
+      </li>
+      <li>
+        <a href="/" class="buttons"> Services </a>
+      </li>
+      <li>
+        <a href="/" class="buttons_teams"> Our Teams </a>
+      </li>
+      <li class="contact_button">
+        <a href="/" class="contact-style"> Contact Us </a>
+      </li>
+    </ul>
+  </div>
+  <div class="burger_menu">
+    <img
+      (click)="toggleNav()"
+      class="burger_icon"
+      src="../../assets/images/menu.png"
+      alt="" />
+  </div>
+</div>
+<div [ngClass]="['burger_menu_lists', showNav ? 'active' : '']">
+  <li class="burger_buttons">
+    <a href="/" class="buttons"> Home </a>
+  </li>
+  <li class="burger_buttons">
+    <a href="/" class="buttons"> About Us </a>
+  </li>
+  <li class="burger_buttons">
+    <a href="/" class="buttons"> Services </a>
+  </li>
+  <li class="burger_buttons">
+    <a href="/" class="buttons_teams"> Our Teams </a>
+  </li>
+  <li class="contact_button">
+    <a href="/" class="contact-style"> Contact Us </a>
+  </li>
 </div>
