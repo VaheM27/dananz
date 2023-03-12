@@ -1,0 +1,144 @@
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 120px;
+
+  .footer_left_section {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      max-width: 126px;
+    }
+
+    p {
+      width: 100%;
+      max-width: 481px;
+      font-family: 'Poppins-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 170%;
+      color: #333333;
+    }
+  }
+
+  .footer_right_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .input_info {
+      margin-right: 60px;
+      // width: 100%;
+      // max-width: 800px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      p {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #333333;
+        margin-left: 20px;
+      }
+    }
+
+    .enter_email {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      input {
+        width: 440px;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+
+      input[placeholder] {
+        padding: 20px 0px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #d9d9d9;
+      }
+
+      input:focus {
+        outline: none;
+        color: black;
+      }
+
+      img {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 203px;
+
+    .follow_text {
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #333333;
+    }
+
+    .social_media_icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer_left_section {
+      align-items: center;
+
+      p {
+        text-align: center;
+        font-size: 26px;
+      }
+    }
+
+    .footer_right_section {
+      margin-top: 40px;
+      align-items: center;
+
+      .social_media {
+        .follow_text {
+          p {
+            text-align: center;
+          }
+        }
+      }
+
+      .input_info {
+        margin-right: 0;
+      }
+
+      .enter_email {
+        input {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
