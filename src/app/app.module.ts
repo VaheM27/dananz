@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 
 import { HomeComponent } from 'src/components/home/home.component';
 import { HomeModule } from 'src/components/home/home.module';
+import { LoaderComponent } from 'src/components/loader/loader.component';
 
 @NgModule({
   imports: [BrowserModule, AppRoutingModule, HomeModule],
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, LoaderComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dananz';
+  showLoader: boolean = true;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.showLoader = false;
+    }, 1000);
+  }
 }
